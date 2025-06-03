@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PET-ECO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7ec, #c8f2d5);
+      color: #2e7d32;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background: rgba(0, 100, 0, 0.2);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #2e7d32;
+      text-shadow: 0 0 10px #81c784;
+    }
+
+    nav a {
+      color: #2e7d32;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #388e3c;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 8rem 2rem;
+      background: url('https://images.unsplash.com/photo-1581579185169-41d9cf678f78?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      position: relative;
+      color: white;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 100, 0, 0.5);
+    }
+
+    .hero h1,
+    .hero p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #c8f2d5;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      border: 2px solid #2e7d32;
+      background: transparent;
+      color: #2e7d32;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn:hover {
+      background: #2e7d32;
+      color: white;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 4rem 2rem;
+      background: #f1f8e9;
+    }
+
+    .feature {
+      background: #ffffff;
+      padding: 2rem;
+      margin: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #43a047;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      background: #dcedc8;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #c8e6c9;
+      font-size: 0.9rem;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">PET-ECO</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Proyectos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bienvenido a PET-ECO</h1>
+    <p>Recicla, reutiliza y protege el planeta con estilo 🌿♻️</p>
+    <a href="#" class="btn">Descubre más</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <i class="fas fa-recycle"></i>
+      <h3>Reciclaje</h3>
+      <p>Transformamos botellas PET en nuevos productos útiles.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-seedling"></i>
+      <h3>Reutilización</h3>
+      <p>Damos una segunda vida a los materiales plásticos.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-globe-americas"></i>
+      <h3>Conciencia Verde</h3>
+      <p>Fomentamos una cultura ecológica desde lo local.</p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <img src="C:\Users\User\Desktop\Pagina web\botella.jpg" alt="Botellas PET recicladas">
+    <img src="C:\Users\User\Desktop\Pagina web\PET-reciclado.jpg" alt="Eco proyectos con botellas">
+    <img src="C:\Users\User\Desktop\Pagina web\naturaleza.jpg" alt="Reutilización creativa de plástico">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PET-ECO. Todos los derechos reservados.</p>
+    <p>Creado por Osorio Sánchez Greek Nicolás y López Cerros América Joana</p>
+  </footer>
+</body>
+</html>
